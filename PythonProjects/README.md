@@ -81,5 +81,5 @@ for i in range(5):
 plt.tight_layout()
 plt.show()
 ```
-![Trending Top Skills for Data Analysts in the US](PythonProjects\Images\Trending Top Skills for Data Analysts in the US.png)
+![Trending Top Skills for Data Analysts in the US](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Trending%20Top%20Skills%20for%20Data%20Analysts%20in%20the%20US.png)
 
