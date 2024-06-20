@@ -84,3 +84,8 @@ plt.show()
 ```
 ![Trending Top Skills for Data Analysts in the US](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Trending%20Top%20Skills%20for%20Data%20Analysts%20in%20the%20US.png)
 
+### Insights: 
+- SQL remains as the top skill throughout the year specifically in "Data Analyst" Positions throughout the United States. 
+- Excel maintained the 2nd top Skill throughout the year and increased towards the end of 2023
+- Interestingly, Python passed Tableau for the #3 spot of Trending skills. 
+- It is good to note that the more stable a skill is in this case, the more likely it will appear in the future years, showing as an excellent skill to master for Aspiring Data Analysts. In the chart, the bottom 3 skills have less overall variability compared to the top 2. 
