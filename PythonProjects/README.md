@@ -48,7 +48,7 @@ plt.show()
 ### Results
 ![Data visualization for Top Skills in Data Jobs](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/count%20of%20job%20postings.png)
 
-![Data Visualization for Likelihood of Skills Requested in Data Jobs]()
+![Data Visualization for Likelihood of Skills Requested in Data Jobs](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/likelihood%20of%20skills%20requested.png)
 
 
 
