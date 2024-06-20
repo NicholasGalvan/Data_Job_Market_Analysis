@@ -46,4 +46,4 @@ plt.tight_layout()
 plt.show()
 ```
 ### Results
-[Data visualization for Top Skills in Data Jobs]()
+![Data visualization for Top Skills in Data Jobs](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/count%20of%20job%20postings.png)
