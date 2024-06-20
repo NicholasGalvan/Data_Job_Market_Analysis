@@ -57,6 +57,7 @@ plt.show()
 
 
 ## 2. How are in-demand skills trending for Data Analysts in the United States? 
+View my notebook with detailed steps here: [3_Skills_Trend.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/3_Skills_Trend.ipynb)
 
 ```python 
 sns.lineplot(data=df_plot, dashes=False)
