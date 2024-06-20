@@ -50,5 +50,36 @@ plt.show()
 
 ![Data Visualization for Likelihood of Skills Requested in Data Jobs](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/likelihood%20of%20skills%20requested.png)
 
+### Insights 
+- Python is highly versatile and this can be seen throughout the count and likelihood of requirement. This skill is in high demand across all data roles, but is most prominent in Data Scientist Roles. 
+- SQL hovers from first to second in most demand depending on the job. Specifically in Data Engineer Roles, SQL is a must to master. 
+- Some top skills can be job specific where they might not at all be used in other positions. Look at Data Analyst, Excel is the 2nd in demand skill which is less specialized in comparison to the technical skills of Data Engineers (AWS, Azure, Spark). 
 
+
+## 2. How are in-demand skills trending for Data Analysts in the United States? 
+
+```python 
+sns.lineplot(data=df_plot, dashes=False)
+sns.set_theme(style='ticks')
+sns.despine()
+
+plt.title('Trending Top Skills for Data Analysts in the US')
+plt.ylabel('Likelihood in Job Posting')
+plt.xlabel('2023')
+plt.legend().remove()
+
+ax= plt.gca() #getting the current axis to format the Y axis
+from matplotlib.ticker import PercentFormatter # change yaxis to percent using matplotlib.ticker
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+#creating labels for each line within the range of the 5 values 
+# plt.text(X position, y value, string label ). Notice each of our lines end at the 12th-1 index value of 11 or "Dec". We want our labels to start here. 
+# to specify the y value we want it also to locate the last row of each index value (last row for sql, python...etc)
+# lastly we want our label to be the string of the column names in the range
+for i in range(5): 
+    plt.text(11, df_plot.iloc[-1, i], df_plot.columns[i])
+plt.tight_layout()
+plt.show()
+```
+![Trending Top Skills for Data Analysts in the US](PythonProjects\Images\Trending Top Skills for Data Analysts in the US.png)
 
