@@ -1,4 +1,46 @@
+# Overview
+Welcome to my project on analyzing the data job market. This project focuses mainly on Data Analyst roles but does include others like Data Scientists and Data Engineers. The goal of this project was to understand the job market by diving into the top-paying and top in-demand skills, to help find an optimal job for an aspiring Data Analyst like myself.
+
+The data is sourced [from Luke Barrousse's Python Course](https://www.lukebarousse.com/python) which contains detailed information on job postings for Data related positions. Through a series of python scripts labeled 1-5 in this project, I explored topics such as: Most Demanded Skills, Skill Trends, Salary Trends, and the interesection between these trends for Data Analysts.
+
+
+# The Questions to Answer
+
+ 1. What are the most demanded skills for the top 3 most popular data roles? 
+ 2. How are in-demand skills trending for Data Analysts in the United States?
+ 3. How well do jobs and skills pay for Data Analysts and Related Jobs?
+ 4. What is the most optimal skill to learn for Data Analysts? 
+
+
+
+# Tools I Used
+
+ Python 
+- The whole project was done in python through jupyter notebooks for ease of analysis and commenting 
+- __Pandas Library__: Data cleaning, manipulation, merging, and wrangling
+- __Matplotlib Library__: For visualizing Data
+- __Seaborn Library__: For customizing visualizations and adding labels
+
+VsCODE
+- IDE of choice
+- Used git/github implementation within to handle version control
+
+
+
+
+
+
+
+
+
+
+
+
+
 # The Analysis
+
+Each question answered will have its own jupyter notebook to look at the code used if desired.
+The intial Exploratory Data Analysis can be seen here: [1_EDA_intro.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/1_EDA_intro.ipynb)
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles? 
 
@@ -204,3 +246,13 @@ plt.show()
 - Analyst tools such as word, powerpoint, excel, and visualiztion tools are middle of the pack but have a lower combined median salary 
 - Databases and Cloud programs pay fairly well yet are rare to see in job postings specifically for Data Analysts. This could be different in such roles like a Data Engineer. 
 - In all, Python and SQL seem to be the common skills to master throughout this whole analysis project.
+
+
+# What I Learned 
+Throughout this project I learned many new skills and different ways to attack the same problem with better efficiency. This project shifted my mind set from "python is hard" to "I want to do python for everything"! Here are some specifics that I learned: 
+- __Advanced Python__: Merging dataframes and creating aggregations. Using loops to create multiple graphs at the same time for comparison. Slicing data and filtering based on certain conditions in a column. List comprehension and appending based on existing data. 
+- __Handling Data__: The importance of always using the copy() method in pandas when creating subsets of data. Always make sure when creating a new aggregation to set the correct index or reset one. How to extract certain aspects from a datetime object such as month (in a string, and an int). Specific graph formatting by using the apply() function from python 
+- __Data Visualization__: How to effectively plot and color coordinate values based on a certain metric such as count or median 
+
+# Conclusion 
+With this project, I set foot in working with jupyter notebooks and specific Data Analyst libraries in python. I now have a better understanding on how to use these libraries along with base python modifications such as dictionary and list managing. This project also opened my eyes to the skills that will best suit my future carrer in being a Data Analyst. Overall this was an excellent learning experience and a positive step toward in my educational experience in Python. 
