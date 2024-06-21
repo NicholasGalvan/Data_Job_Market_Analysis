@@ -117,7 +117,7 @@ plt.show()
 
 ### Results 
 
-![Salary Distributions in the United States]()
+![Salary Distributions in the United States](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Salary%20Distributions%20in%20the%20United%20States.png)
 
 #### Insights
 - Between the top 6 data roles in the United States, there is a large variation in the distribution of salary, where Senior Data Scientists take the top spot for the highest average yearly salary. 
@@ -156,7 +156,7 @@ plt.show()
 ```
 #### Results 
 Here is the breakdown for the top 10 highest paying skills for Data Analysts in the US along with the top 10 most in-demand. 
-![Highest Paid and Most in Demand Skills]()
+![Highest Paid and Most in Demand Skills](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Top%20Paying%20and%20Top%20In-Demand%20Skills.png)
 
 
 #### Insights
