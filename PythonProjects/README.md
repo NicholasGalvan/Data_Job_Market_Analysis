@@ -166,3 +166,41 @@ Here is the breakdown for the top 10 highest paying skills for Data Analysts in 
 - The top graph depicts the highest paying skills which are 'dpylr', 'bitbutcket' and 'gitlab', these all pay well above 175k. This suggest that learning niche and advanced technical skills can increase earning potential. 
 - When looking at the bottom graph, we can see that the 'Microsoft 365' Stack such as (word, excel, powerpoint, power bi) are high in-demand yet they do not pay as much as more technical/programming skills like python, r, and sql. 
 - There is a clear correlation between the most in-demand skills and median salary. An aspiring analyst should take note of this and learn a wide range of both technical and non technical skills to increase their chances of success. 
+
+
+## 4. What is the most optimal skill to learn for Data Analysts? 
+Optimal skills fall into place where the median salary and percent of the specific skill appearing have strong correlation to each other. This relationship can be easily shown in a scatter plot where the type of technology is plotted by median salary on the y-axis and percent of skill in job postings on the x-axis. I split up the skills based on their specific role (Analyst tool, databases, programming) to get a deeper insight on the optimal learning pathway an analyst might take in their carrer. 
+
+View the notebook for the nextresults here: [5_Optimal_Skills.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/5_Optimal_Skills.ipynb)
+
+### Visualize Data 
+```python 
+from adjustText import adjust_text # adding library for text label formatting on our values
+#plotting the scatter
+sns.scatterplot(data=df_plot, x='skill_percent', y='median_salary', hue='technology')
+texts = [] #adding text to each plot in a scatter 
+for i, txt in enumerate(df_high_demand_skills.index): 
+   texts.append(plt.text(df_high_demand_skills['skill_percent'].iloc[i], df_high_demand_skills['median_salary'].iloc[i], txt )) # setting x values, yvalues, txt
+
+# adjustText to avoid overlapping 
+adjust_text(texts, arrowprops=dict(arrowstyle='->', color='gray'))
+
+ax = plt.gca() # getting the current axis to format 
+ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')) # formatting number to currency on y-axis 
+from matplotlib.ticker import PercentFormatter
+ax.xaxis.set_major_formatter(PercentFormatter(decimals=0)) # changing x-axis to percent 
+plt.ylabel('Median Yearly Salary ($USD)')
+plt.xlabel('Percent of Job Postings')
+plt.title('Salary vs. Count of Job Postings for Top Skills')
+plt.tight_layout()
+plt.show()
+```
+### Results 
+![Most Optimal Skills for Data Analysts]()
+
+
+### Insights 
+- Programming skills in blue, such as SQL and Python, express this optimal relationship where both the median salary and the percent of job postings which include this skill are high. 
+- Analyst tools such as word, powerpoint, excel, and visualiztion tools are middle of the pack but have a lower combined median salary 
+- Databases and Cloud programs pay fairly well yet are rare to see in job postings specifically for Data Analysts. This could be different in such roles like a Data Engineer. 
+- In all, Python and SQL seem to be the common skills to master throughout this whole analysis project.
