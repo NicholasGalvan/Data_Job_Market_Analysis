@@ -40,13 +40,13 @@ VsCODE
 # The Analysis
 
 Each question answered will have its own jupyter notebook to look at the code used if desired.
-The intial Exploratory Data Analysis can be seen here: [1_EDA_intro.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/1_EDA_intro.ipynb)
+The intial Exploratory Data Analysis can be seen here: [1_EDA_intro.ipynb](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/1_EDA_intro.ipynb)
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles? 
 
 To find the most demanded skills for the top 3 most popular data roles, I filtered out the top 3 demanded job positions by count, then filtered the top 5 skills needed for these top data roles. This question to be explored, highlights the most popular job titles and their top skills, showing which skills should be mastered by aspiring data analysts like myself.
 
-View my notebook with detailed steps here: [2_Skill_Demand.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/2_Skill_Demand.ipynb)
+View my notebook with detailed steps here: [2_Skill_Demand.ipynb](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/2_Skill_Demand.ipynb)
 
 ### Visualizing Data [1]
 ```python
@@ -88,9 +88,9 @@ plt.tight_layout()
 plt.show()
 ```
 ### Results
-![Data visualization for Top Skills in Data Jobs](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/count%20of%20job%20postings.png)
+![Data visualization for Top Skills in Data Jobs](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/Images/count%20of%20job%20postings.png)
 
-![Data Visualization for Likelihood of Skills Requested in Data Jobs](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/likelihood%20of%20skills%20requested.png)
+![Data Visualization for Likelihood of Skills Requested in Data Jobs](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/Images/likelihood%20of%20skills%20requested.png)
 
 ### Insights 
 - Python is highly versatile and this can be seen throughout the count and likelihood of requirement. This skill is in high demand across all data roles, but is most prominent in Data Scientist Roles. 
@@ -102,7 +102,7 @@ plt.show()
 
 For this question, I filtered our original (job data) data frame to include only postings that are from the 'United States' and have the title position 'Data Analyst'. I then aggregated the count of each skill by each month into a pivot table. Lastly I converted the counts of each skill in each month, to a percent of total postings in each month to get a 'Likelihood' that a certain skill will appear in a Data Analyst job posting. 
 
-View my notebook with detailed steps here: [3_Skills_Trend.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/3_Skills_Trend.ipynb)
+View my notebook with detailed steps here: [3_Skills_Trend.ipynb](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/3_Skills_Trend.ipynb)
 
 ```python 
 sns.lineplot(data=df_plot, dashes=False)
@@ -127,7 +127,7 @@ for i in range(5):
 plt.tight_layout()
 plt.show()
 ```
-![Trending Top Skills for Data Analysts in the US](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Trending%20Top%20Skills%20for%20Data%20Analysts%20in%20the%20US.png)
+![Trending Top Skills for Data Analysts in the US](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/Images/Trending%20Top%20Skills%20for%20Data%20Analysts%20in%20the%20US.png)
 
 ### Insights: 
 - SQL remains as the top skill throughout the year specifically in "Data Analyst" Positions throughout the United States. 
@@ -142,7 +142,7 @@ plt.show()
 ### Salary Analysis For the top 6 Requested Roles in the United States 
 In this analysis, I filtered for the top 6 Data Related roles by job posting count for the year. After getting these roles, I created an aggregated table of job titles by the median of the values in the (salary_year_avg) column. Plotting as a boxplot investigated the salary distributions for each.
 
-View the notebook for the next two results here: [4_Salary_Analysis.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/4_Salary_Analysis.ipynb)
+View the notebook for the next two results here: [4_Salary_Analysis.ipynb](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/4_Salary_Analysis.ipynb)
 
 ### Visualizing the Data 
 ```python 
@@ -161,7 +161,7 @@ plt.show()
 
 ### Results 
 
-![Salary Distributions in the United States](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Salary%20Distributions%20in%20the%20United%20States.png)
+![Salary Distributions in the United States](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/Images/Salary%20Distributions%20in%20the%20United%20States.png)
 
 ### Insights
 - Between the top 6 data roles in the United States, there is a large variation in the distribution of salary, where Senior Data Scientists take the top spot for the highest average yearly salary. 
@@ -200,7 +200,7 @@ plt.show()
 ```
 ### Results 
 Here is the breakdown for the top 10 highest paying skills for Data Analysts in the US along with the top 10 most in-demand. 
-![Highest Paid and Most in Demand Skills](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Top%20Paying%20and%20Top%20In-Demand%20Skills.png)
+![Highest Paid and Most in Demand Skills](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/Images/Top%20Paying%20and%20Top%20In-Demand%20Skills.png)
 
 
 ### Insights
@@ -213,7 +213,7 @@ Here is the breakdown for the top 10 highest paying skills for Data Analysts in 
 ## 4. What is the most optimal skill to learn for Data Analysts? 
 Optimal skills fall into place where the median salary and percent of the specific skill appearing have strong correlation to each other. This relationship can be easily shown in a scatter plot where the type of technology is plotted by median salary on the y-axis and percent of skill in job postings on the x-axis. I split up the skills based on their specific role (Analyst tool, databases, programming) to get a deeper insight on the optimal learning pathway an analyst might take in their carrer. 
 
-View the notebook for the nextresults here: [5_Optimal_Skills.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/5_Optimal_Skills.ipynb)
+View the notebook for the nextresults here: [5_Optimal_Skills.ipynb](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/5_Optimal_Skills.ipynb)
 
 ### Visualize Data 
 ```python 
@@ -238,7 +238,7 @@ plt.tight_layout()
 plt.show()
 ```
 ### Results 
-![Most Optimal Skills for Data Analysts](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Salary%20vs%20Count%20of%20Job%20Postings%20for%20Top%20Skills.png)
+![Most Optimal Skills for Data Analysts](https://github.com/NicholasGalvan/Data_Job_Market_Analysis/blob/main/Data_Job_Analysis/Images/Salary%20vs%20Count%20of%20Job%20Postings%20for%20Top%20Skills.png)
 
 
 ### Insights 
