@@ -196,7 +196,7 @@ plt.tight_layout()
 plt.show()
 ```
 ### Results 
-![Most Optimal Skills for Data Analysts]()
+![Most Optimal Skills for Data Analysts](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Salary%20vs%20Count%20of%20Job%20Postings%20for%20Top%20Skills.png)
 
 
 ### Insights 
