@@ -98,7 +98,9 @@ plt.show()
 
 
 ### Salary Analysis For the top 6 Requested Roles in the United States 
-In this analysis, I filtered for the top 6 Data Related roles by job posting count for the year. After getting these roles, I created an aggregated table of job titles by the median of the values in the (salary_year_avg) column. Plotting as a boxplot investigated the salary distributions for each. 
+In this analysis, I filtered for the top 6 Data Related roles by job posting count for the year. After getting these roles, I created an aggregated table of job titles by the median of the values in the (salary_year_avg) column. Plotting as a boxplot investigated the salary distributions for each.
+
+View the notebook for the next two results here: [4_Salary_Analysis.ipynb](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/4_Salary_Analysis.ipynb)
 
 ### Visualizing the Data 
 ```python 
@@ -119,7 +121,7 @@ plt.show()
 
 ![Salary Distributions in the United States](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Salary%20Distributions%20in%20the%20United%20States.png)
 
-#### Insights
+### Insights
 - Between the top 6 data roles in the United States, there is a large variation in the distribution of salary, where Senior Data Scientists take the top spot for the highest average yearly salary. 
 - There seems to be an immense ammount of "outliers" for Data Scientists and Data Engineers, indicating that certain jobs may require specialized skills where employers could have a much harder time in finding the right candidate. 
 - In comparison to the rest, Senior and Junior Data Analysts might get paid the least but the range in their median yearly salary is quite small, indicating stability in these positions. 
@@ -130,7 +132,7 @@ plt.show()
 
 To go further into detail, I compared the highest paying vs the highest in demand skills for Data Analyts. First, I grabbed the top 10 most paying skills for Data Analyst jobs by aggregating on median salary. Secondly, I created an aggregation of the top 10 'most common' skills for Data Analysts by count. The goal here is to more or less map out the essential and in-demand skills along with their salaries. Will it be better to specialize in niche technologies? Do less technical skills such as microsoft products still hold up in demand? 
 
-#### Visualize Data 
+### Visualize Data 
 ```python 
 # plot both the top 10 highest paying skills and the 10 most in demand skills 
 fig, ax = plt.subplots(2,1)
@@ -154,12 +156,12 @@ ax[1].set_title('Top 10 Most In-Demand Skills for Data Analysts')
 plt.tight_layout()
 plt.show()
 ```
-#### Results 
+### Results 
 Here is the breakdown for the top 10 highest paying skills for Data Analysts in the US along with the top 10 most in-demand. 
 ![Highest Paid and Most in Demand Skills](https://github.com/NicholasGalvan/Python/blob/main/PythonProjects/Images/Top%20Paying%20and%20Top%20In-Demand%20Skills.png)
 
 
-#### Insights
+### Insights
 
 - The top graph depicts the highest paying skills which are 'dpylr', 'bitbutcket' and 'gitlab', these all pay well above 175k. This suggest that learning niche and advanced technical skills can increase earning potential. 
 - When looking at the bottom graph, we can see that the 'Microsoft 365' Stack such as (word, excel, powerpoint, power bi) are high in-demand yet they do not pay as much as more technical/programming skills like python, r, and sql. 
